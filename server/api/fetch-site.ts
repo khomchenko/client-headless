@@ -1,10 +1,10 @@
 import fs from "fs";
+import path from "path";
 import { contentRefs, contentWalk } from "@/helpers/contentReference";
 import { createSitemap } from "@/helpers/persistenceStorage";
 import { Site } from "@/types";
-import path from "path";
 
-export default async function (req: any, res: any) {
+export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig();
 
   try {
@@ -13,7 +13,6 @@ export default async function (req: any, res: any) {
     );
 
     contentWalk(data.content_group.contents, null);
-
     let contentPages = Object.values(contentRefs);
 
     fs.writeFileSync(
@@ -25,8 +24,8 @@ export default async function (req: any, res: any) {
       createSitemap(config.SITE_URL, contentPages)
     );
 
-    return res.end();
+    return { status: 200 };
   } catch (e: any) {
-    return e;
+    console.log(e);
   }
-}
+});

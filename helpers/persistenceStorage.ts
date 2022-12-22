@@ -1,11 +1,23 @@
 import { contentRefs } from "@/helpers/contentReference";
-import {Field, FieldState, FieldValues, FieldGroup, MediaFieldState} from "@/types";
+import {
+  Field,
+  FieldState,
+  FieldValues,
+  FieldGroup,
+  MediaFieldState,
+} from "@/types";
 
-export const getStringField = (item: FieldState | FieldGroup, name: string): string | null => {
+export const getStringField = (
+  item: FieldState | FieldGroup,
+  name: string
+): string | null => {
   return getByReferenceName(item, name);
 };
 
-export const getMediaField = (item: FieldState | FieldGroup, name: string): MediaFieldState | null => {
+export const getMediaField = (
+  item: FieldState | FieldGroup,
+  name: string
+): MediaFieldState | null => {
   return getByReferenceName(item, name);
 };
 
@@ -14,13 +26,9 @@ export const getByReferenceName = (
   reference_name: string
 ) => {
   return item.fields
-    ?.filter(
-      (field: Field) => field.field_template.reference_name === reference_name
-    )
+    ?.filter((field: Field) => field.template.reference_name === reference_name)
     ?.pop()
-    ?.field_values.filter(
-      (value: FieldValues) => value?.language?.code === "en"
-    )
+    ?.values.filter((value: FieldValues) => value?.language?.code === "en")
     ?.pop()?.state as any;
 };
 
@@ -29,10 +37,8 @@ export const getRepeaterByReferenceName = (
   reference_name: string
 ) => {
   return item.fields
-    ?.filter(
-      (field: Field) => field.field_template.reference_name === reference_name
-    )
-    ?.pop()?.field_values[0].state as unknown as Field[];
+    ?.filter((field: Field) => field.template.reference_name === reference_name)
+    ?.pop()?.values[0].state as unknown as Field[];
 };
 
 export const isAvailableGroup = (
