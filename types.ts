@@ -70,9 +70,9 @@ export interface Field {
   state: null | FieldState;
   created_at: string;
   field_group_id: number;
-  field_template: FieldTemplate;
+  template: FieldTemplate;
   field_template_id: number;
-  field_values: FieldValues[];
+  values: FieldValues[];
   id: number;
   type_name: string;
   updated_at: string;
