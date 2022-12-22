@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "start": "nuxt start"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.6",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.11.17",
+    "lodash": "^4.17.21",
+    "ohmyfetch": "^0.4.21",
+    "pinia": "^2.0.28",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "swiper": "^8.4.5",
+    "vue-awesome-swiper": "^5.0.1"
+  }
+}

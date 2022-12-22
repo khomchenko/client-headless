@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130.426" height="42.573" viewBox="0 0 130.426 42.573">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_3" data-name="Path 3" d="M0-78.993H122.85v-35.144H0Z" transform="translate(0 114.137)" fill="#babec1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_10984" data-name="Group 10984" transform="translate(-193.574 -1533.427)">
+    <text id="text-base" transform="translate(236 1568)" fill="#023a52" font-size="34" font-family="Raleway-Bold, Raleway" font-weight="700" letter-spacing="0.01em"><tspan x="0" y="0">BASE</tspan></text>
+    <g id="Group_10975" data-name="Group 10975" transform="translate(193.574 1647.564)">
+      <g id="Group_4" data-name="Group 4" transform="translate(0 -114.137)">
+        <path id="Path_5" data-name="Path 5" d="M0,0V24.976H5.586V5.557H20.327V24.992h5.557V0Z" fill="#023a52"/>
+      </g>
+      <g id="Group_5" data-name="Group 5" transform="translate(10.179 -103.99)">
+        <path id="Path_6" data-name="Path 6" d="M0,0V24.992H25.884V.016H20.3V19.435H5.557V0Z" fill="#023a52"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+@mixin container-width {
+  max-width: 1374px;
+  width: 100%;
+}
+
+@mixin heading-primary {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  line-height: 16px;
+}

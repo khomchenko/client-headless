@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  background: #275f74;
+  color: $color-white;
+  padding: 8px 0;
+
+  @media only screen and (max-width: 640px) {
+    display: none;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    margin-left: auto;
+
+    &__item {
+      display: flex;
+      margin-right: 30px;
+
+      @media only screen and (max-width: 740px) {
+        margin-right: 16px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &__link {
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        line-height: 24px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-white;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: #01a3ec;
+        }
+      }
+    }
+  }
+}
