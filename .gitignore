@@ -9,4 +9,4 @@ dist
 .DS_Store
 .idea
 static/site.json
-sitemap.xml
+public/sitemap.xml

@@ -20,7 +20,7 @@ export default defineEventHandler(async (event) => {
       JSON.stringify(data)
     );
     fs.writeFileSync(
-      path.resolve(config.SERVER_PROJECT_ROOT, "sitemap.xml"),
+      path.resolve(config.SERVER_PROJECT_ROOT, "public/sitemap.xml"),
       createSitemap(config.SITE_URL, contentPages)
     );
 
